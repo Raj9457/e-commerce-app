@@ -1,73 +1,114 @@
-# Welcome to your Lovable project
+# E Commerce App E-commerce Product Listing
 
-## Project info
+A responsive React-based e-commerce product listing page that provides a seamless shopping experience with features like product filtering, sorting, pagination, and a mini cart.
 
-**URL**: https://lovable.dev/projects/06098f78-e67a-4e3d-b0fe-5176c028bd19
+![E Commerce App Screenshot](https://ibb.co/B24HCRKs)
 
-## How can I edit this code?
+## Features
 
-There are several ways of editing your application.
+- **Product Listing**: Grid view of products fetched from Fake Store API
+- **Filtering**: Filter products by dcategory and price range
+- **Sorting**: Sort products by price (low to high/high to low) and title (A-Z/Z-A)
+- **Pagination**: Navigate through products with a clean pagination interface
+- **Mini Cart**: Add products to cart with a sliding cart drawer showing order summary
+- **Responsive Design**: Fully responsive UI that works on mobile, tablet, and desktop
 
-**Use Lovable**
+## Demo
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/06098f78-e67a-4e3d-b0fe-5176c028bd19) and start prompting.
+Live demo: [E Commerece App](https://shiny-ganache-21cbe9.netlify.app/)
 
-Changes made via Lovable will be committed automatically to this repo.
+## Technologies Used
 
-**Use your preferred IDE**
+- React 18
+- TypeScript
+- React Router
+- Tailwind CSS
+- shadcn/ui components
+- React Query for data fetching
+- Fake Store API
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Getting Started
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Prerequisites
 
-Follow these steps:
+- Node.js (v16 or higher)
+- npm or yarn
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### Installation
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+1. Clone the repository
 
-# Step 3: Install the necessary dependencies.
-npm i
+   ```bash
+   git clone https://github.com/Raj9457/e-commerce-app
+   cd e-commerce-app
+   ```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+2. Install dependencies
+
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. Start the development server
+
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+4. Open your browser and navigate to `http://localhost:5173`
+
+## API Integration
+
+This project uses the [Fake Store API](https://fakestoreapi.com/) for product data with the following endpoints:
+
+- All Products: `https://fakestoreapi.com/products`
+- Categories: `https://fakestoreapi.com/products/categories`
+- Filter by category: `https://fakestoreapi.com/products/category/{category}`
+
+## Project Structure
+
+```
+src/
+├── components/        # UI components
+│   ├── Cart.tsx       # Shopping cart component
+│   ├── Filters.tsx    # Filtering options component
+│   ├── Navbar.tsx     # Top navigation bar
+│   ├── Pagination.tsx # Page navigation component
+│   ├── ProductCard.tsx # Individual product display
+│   ├── ProductGrid.tsx # Grid layout for products
+│   └── ui/            # UI component library (shadcn/ui)
+├── hooks/             # Custom React hooks
+├── lib/               # Utility functions
+├── pages/             # Page components
+│   ├── Index.tsx      # Home/product listing page
+│   └── NotFound.tsx   # 404 page
+├── services/          # API service layer
+│   └── api.ts         # API client and type definitions
+├── App.tsx            # Main application component
+└── main.tsx           # Application entry point
 ```
 
-**Edit a file directly in GitHub**
+## Deployment
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+This project can be easily deployed to Netlify or Vercel:
 
-**Use GitHub Codespaces**
+1. Push your code to a GitHub repository
+2. Connect your repository to Netlify/Vercel
+3. Configure the build settings:
+   - Build command: `npm run build` or `yarn build`
+   - Publish directory: `dist`
+4. Deploy!
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## License
 
-## What technologies are used for this project?
+MIT
 
-This project is built with:
+## Acknowledgments
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/06098f78-e67a-4e3d-b0fe-5176c028bd19) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+- [Fake Store API](https://fakestoreapi.com/) for providing the product data
+- [shadcn/ui](https://ui.shadcn.com/) for the beautiful UI components
+- [Tailwind CSS](https://tailwindcss.com/) for the utility-first CSS framework
