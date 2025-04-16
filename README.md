@@ -2,7 +2,7 @@
 
 A responsive React-based e-commerce product listing page that provides a seamless shopping experience with features like product filtering, sorting, pagination, and a mini cart.
 
-![E Commerce App Screenshot](https://ibb.co/B24HCRKs)
+![E Commerce App Screenshot](https://i.ibb.co/WvDN21pK/Screenshot-2025-04-16-at-12-28-44-PM.png)
 
 ## Features
 
